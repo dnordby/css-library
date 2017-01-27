@@ -3,7 +3,7 @@ npm-debug.log*
 .sass-cache/
 *.css.map
 *.html
-
+.gitignore
 src
 node_modules
 config.yml
