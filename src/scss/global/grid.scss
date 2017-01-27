@@ -1,3 +1,37 @@
-body {
-  background-color: $white;
+html, body, h1, p {
+  font-family: 'Open Sans';
+  font-size: 24px;
+  margin: 0;
+  -webkit-margin-after: initial;
+  -webkit-margin-before: initial;
+  -webkit-margin-end: initial;
+  -webkit-margin-start: initial;
+
+  h1 {
+    font-size: 36px;
+    line-height: 1.33333333em;
+    margin-bottom: 1em;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: calc(1.5em + 1px);
+    margin-bottom: 2.25em;
+  }
+
+  .container-fluid {
+    border: 1px black dashed;
+    height: 200px;
+    &:after, &:before {
+      content: '';
+      display: table;
+    }
+  }
+
+  .container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
 }
