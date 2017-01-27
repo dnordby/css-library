@@ -1,0 +1,11 @@
+*.DS_Store
+npm-debug.log*
+.sass-cache/
+*.css.map
+*.html
+
+src
+node_modules
+config.yml
+package.json
+webpack.config.js
