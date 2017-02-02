@@ -28,16 +28,16 @@ A full-bleed effect can be achieved by adding the class `full-bleed` to a an ele
 
 Nested columns are allowed, and an optional `no-pad` class has been written in for nested columns which simply removes the padding on the column and fits the column width relative to its parent column container.
 
+##Font Modernizer
+
+*Not yet built out*
+
 ###To Use:
 `git clone git@github.com:dnordby/css-library.git`
 
 Pull out minified `css/vpv-base.css` and add it to your assets path. Include in your `<head>` tag:
 
 `<link rel="stylesheet" type="text/css" href="[your-path-to-file]/vpv-base.scss">`
-
-##Font Modernizer
-
-*Not yet completed*
 
 ###To Modify:
 `git clone git@github.com:dnordby/css-library.git`
