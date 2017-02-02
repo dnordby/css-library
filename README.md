@@ -1,5 +1,12 @@
 #VPV CSS Modernizer
 
+##Instalation
+`git clone git@github.com:dnordby/css-library.git`
+
+Pull out minified `css/vpv-base.css` and add it to your assets path. Include in your `<head>` tag:
+
+`<link rel="stylesheet" type="text/css" href="[your-path-to-file]/vpv-base.scss">`
+
 ##Grid
 The grid is set up using bootstrap naming conventions.
 ```
@@ -31,13 +38,6 @@ Nested columns are allowed, and an optional `no-pad` class has been written in f
 ##Font Modernizer
 
 *Not yet built out*
-
-###To Use:
-`git clone git@github.com:dnordby/css-library.git`
-
-Pull out minified `css/vpv-base.css` and add it to your assets path. Include in your `<head>` tag:
-
-`<link rel="stylesheet" type="text/css" href="[your-path-to-file]/vpv-base.scss">`
 
 ###To Modify:
 `git clone git@github.com:dnordby/css-library.git`
