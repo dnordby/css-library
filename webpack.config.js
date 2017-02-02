@@ -1,5 +1,5 @@
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
-let extractSCSS = new ExtractTextPlugin('./vpv-base.css');
+let extractSCSS = new ExtractTextPlugin('./vpv-modernizer.css');
 module.exports = {
     entry: "./src/js/app.js",
     output: {
