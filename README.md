@@ -20,11 +20,13 @@ Breakpoints are currently as follows:
 * 1280px - 1599px (`col-lg-*`)
 * >= 1600px (`col-xl-*`)
 
-Nested elements are allowed, however note that gutters are created by padding on the outside of the column; there is no margin or padding adjustments on the `container-fluid` class. There is however a margin-top and margin-bottom of 0.5em, and a padding-left and padding-right of 0.5em. This ensures the gutter on the outside of the row matches the gutter between columns.
+Gutters are set to `1em` and `font-size: 24px;` for the document so that the padding on a column is `0.5em` or 12px. Two adjacent columns will have a gutter of `1em` or 24px. Note that gutters are created by padding on the entire outside of the column.
+
+There is no margin or padding adjustments on the `container-fluid` class. There is however a margin-top and margin-bottom of 0.5em, and a padding-left and padding-right of 0.5em. This ensures the gutter on the outside of the row matches the gutter between columns.
 
 A full-bleed effect can be achieved by adding the class `full-bleed` to a an element also containing the `row` class. This removes the extra row margin/padding, and removes padding on columns, and also adjusts width to be the full width of their column, rather than `width: calc([col-size]/12*100% - 1em)` which accounts for the gutter in a non-full-bleed scenario.
 
-An optional `no-pad` class has been written in for nested columns which simply removes the padding on the column and fits the column width relative to its parent column container.
+Nested columns are allowed, and an optional `no-pad` class has been written in for nested columns which simply removes the padding on the column and fits the column width relative to its parent column container.
 
 ###To Use:
 `git clone git@github.com:dnordby/css-library.git`
@@ -32,6 +34,10 @@ An optional `no-pad` class has been written in for nested columns which simply r
 Pull out minified `css/vpv-base.css` and add it to your assets path. Include in your `<head>` tag:
 
 `<link rel="stylesheet" type="text/css" href="[your-path-to-file]/vpv-base.scss">`
+
+##Font Modernizer
+
+*Not yet completed*
 
 ###To Modify:
 `git clone git@github.com:dnordby/css-library.git`
