@@ -1,5 +1,31 @@
 #VPV CSS Modernizer
 
+##Grid
+The grid is set up using bootstrap naming conventions.
+```
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"></div>
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"></div>
+	</div>
+</div>
+```
+
+Note that the `col-xl-*` class has been added.
+
+Breakpoints are currently as follows:
+* 325px - 767px (`col-xs-*`)
+* 768px - 991px (`col-sm-*`)
+* 992px - 1279px (`col-md-*`)
+* 1280px - 1599px (`col-lg-*`)
+* >= 1600px (`col-xl-*`)
+
+Nested elements are allowed, however note that gutters are created by padding on the outside of the column; there is no margin or padding adjustments on the `container-fluid` class. There is however a margin-top and margin-bottom of 0.5em, and a padding-left and padding-right of 0.5em. This ensures the gutter on the outside of the row matches the gutter between columns.
+
+A full-bleed effect can be achieved by adding the class `full-bleed` to a an element also containing the `row` class. This removes the extra row margin/padding, and removes padding on columns, and also adjusts width to be the full width of their column, rather than `width: calc([col-size]/12*100% - 1em)` which accounts for the gutter in a non-full-bleed scenario.
+
+An optional `no-pad` class has been written in for nested columns which simply removes the padding on the column and fits the column width relative to its parent column container.
+
 ###To Use:
 `git clone git@github.com:dnordby/css-library.git`
 
