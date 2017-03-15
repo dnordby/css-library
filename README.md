@@ -1,13 +1,13 @@
-#VPV CSS Normalizer
+# VPV CSS Normalizer
 
-##Instalation
+## Instalation
 `git clone git@github.com:dnordby/css-library.git`
 
 Pull out minified `css/vpv-normalizer.css` and add it to your assets directory. Include in your `<head>` tag:
 
 `<link rel="stylesheet" type="text/css" href="[your-path-to-file]/vpv-normalizer.css">`
 
-##Grid
+## Grid
 The grid is set up using bootstrap naming conventions.
 ```
 <div class="container-fluid">
@@ -35,11 +35,11 @@ A full-bleed effect can be achieved by adding the class `full-bleed` to a an ele
 
 Nested columns are allowed, and an optional `no-pad` class has been written in for nested columns which simply removes the padding on the column and fits the column width relative to its parent column container.
 
-##Font Normalizer
+## Font Normalizer
 
 *Not yet built out*
 
-###To Modify:
+### To Modify:
 `git clone git@github.com:dnordby/css-library.git`
 
 `git checkout -b [name_of_your_new_branch]`
@@ -50,7 +50,7 @@ Nested columns are allowed, and an optional `no-pad` class has been written in f
 
 Edit `src/scss` files. Sub directories can be added (in addition to `src/scss/global`), and sub files can be added to each subdirectory. Each new addition must be indluded as a new import in `src/scss/app.scss`. Webpack will autoprefix, process to CSS, and minimize the any included files in `src/scss/app.scss` and compile them to `css/vpv-normalizer.css`
 
-####To create a merge request run:
+#### To create a merge request run:
 * `git push origin [name_of_your_new_branch]`
 
 * Your recently pushed branches may be listed at the top - click "Compare & pull request" to resolve any issues and submit.

@@ -1,7 +1,7 @@
 html, body, h1, h2, h3, h4, h5, h6, p {
   box-sizing: border-box;
   font-family: 'Open Sans';
-  font-size: 24px;
+  font-size: 150%;
   font-weight: initial;
   margin: 0;
   -webkit-margin-after: initial;
