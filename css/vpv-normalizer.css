@@ -9,6 +9,9 @@ html, body, h1, h2, h3, h4, h5, h6, p {
   -webkit-margin-end: initial;
   -webkit-margin-start: initial; }
 
+body {
+  width: 100vw; }
+
 h1 {
   font-size: 2em;
   letter-spacing: -0.4px;
@@ -38,7 +41,7 @@ p {
 .container-fluid {
   margin-left: auto;
   margin-right: auto;
-  width: 100vw; }
+  width: 100%; }
   .container-fluid:after, .container-fluid:before {
     content: '';
     display: table; }
