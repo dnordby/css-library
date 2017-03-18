@@ -44,6 +44,8 @@ Nested columns are allowed, and an optional `no-pad` class has been written in f
 
 `git checkout -b [name_of_your_new_branch]`
 
+`npm install -g webpack`
+
 `npm install`
 
 `webpack --watch --optimize-minimize`
