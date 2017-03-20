@@ -1,5 +1,3 @@
-function exportHome() {
-  console.log("It works from home.js.");
-}
+function exportHome() {}
 
 module.exports = exportHome();
