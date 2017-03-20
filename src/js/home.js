@@ -1,3 +1,5 @@
-function exportHome() {}
+
+function exportHome() {
+}
 
 module.exports = exportHome();
