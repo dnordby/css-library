@@ -47,8 +47,6 @@
 	// REQUIRE ALL SCSS FROM APP.SCSS
 	__webpack_require__(1);
 
-	__webpack_require__(3);
-
 	// REQUIRE COLLAPSE
 	__webpack_require__(4);
 
@@ -10324,9 +10322,10 @@
 
 /***/ },
 /* 4 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	function exportCollapse() {
+		var jQuery = __webpack_require__(3);
 	  /*!
 	 * Bootstrap v3.3.7 (http://getbootstrap.com)
 	 * Copyright 2011-2017 Twitter, Inc.
@@ -10347,7 +10346,6 @@
 /* 5 */
 /***/ function(module, exports) {
 
-	
 	function exportHome() {
 	}
 

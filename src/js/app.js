@@ -1,7 +1,8 @@
 // REQUIRE ALL SCSS FROM APP.SCSS
 require("./../scss/app.scss");
 
-require("jquery");
+var jQuery = require('jquery');
+var $ = require('jquery');
 
 // REQUIRE COLLAPSE
 require("./collapse.js");
