@@ -1,6 +1,6 @@
 # VPV CSS Normalizer
 
-## Instalation
+## Installation
 `git clone git@github.com:dnordby/css-library.git`
 
 Pull out minified `css/vpv-normalizer.css` and add it to your assets directory. Include in your `<head>` tag:
