@@ -9,3 +9,9 @@ $xlarge-break: 1600px;
 $base-font-size: 24px;
 $base-gutter-size: 12px;
 $double-base-gutter-size: 24px;
+
+.tile {
+    height: 300px;
+    background-color: blue;
+    border: 2px solid orange;
+}
