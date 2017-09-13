@@ -31,24 +31,3 @@ A full-bleed effect can be achieved by adding the class `full-bleed` to a an ele
 Nested columns are allowed, but must be wrapped by a `.row` element to avoid unwanted spacing issues.
 
 By default, [`collapse.js`](https://getbootstrap.com/docs/3.3/javascript/#collapse) and its corrresponding styles are included in the grid. You must also include the `app.js` file (found in the same directory as the `gridX.css` build), or manually include the source code from Bootstrap.
-
-
-### To Modify:
-`git clone git@github.com:dnordby/gridX.git`
-
-`git checkout -b [name_of_your_new_branch]`
-
-`npm install -g webpack`
-
-`npm install`
-
-`webpack --watch --optimize-minimize`
-
-Edit `src/scss` files. Sub directories can be added (in addition to `src/scss/global`), and sub files can be added to each subdirectory. Each new addition must be indluded as a new import in `src/scss/app.scss`. Webpack will autoprefix, process to CSS, and minimize the any included files in `src/scss/app.scss` and compile them to `css/vpv-normalizer.css`
-
-#### To create a merge request run:
-* `git push origin [name_of_your_new_branch]`
-
-* Your recently pushed branches may be listed at the top - click "Compare & pull request" to resolve any issues and submit.
-
-* Assign the repo owner to the merge for review and approval. The master branch is protected, you will not be able to merge your own requests.
