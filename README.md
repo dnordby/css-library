@@ -7,7 +7,7 @@ Include minified `css/gridX.css` and add it to your assets directory. Include in
 `<link rel="stylesheet" type="text/css" href="[your-path-to-file]/gridX.css">`
 
 ## Grid
-gridX is a lightweight grid system, inspired by [Bootstrap](http://getbootstrap.com/) and follows similar naming conventions. gridX allows you to specify the number of columns your design will support, gutter width, and breakpoints.
+gridX is a lightweight grid system inspired by [Bootstrap](http://getbootstrap.com/) and follows similar naming conventions. gridX allows you to specify the number of columns your design will support, gutter width, and breakpoints.
 ```
 <div class="container-fluid">
 	<div class="row">
@@ -29,6 +29,8 @@ By default, the `.row` class has left/right padding of 12px. Any `.col-*-*` clas
 A full-bleed effect can be achieved by adding the class `full-bleed` to a an element also containing the `row` class. This removes the extra row margin/padding, and removes margin on columns.
 
 Nested columns are allowed, but must be wrapped by a `.row` element to avoid unwanted spacing issues.
+
+By default, [`collapse.js`](https://getbootstrap.com/docs/3.3/javascript/#collapse) and its corrresponding styles are included in the grid.
 
 
 ### To Modify:
