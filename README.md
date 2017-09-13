@@ -31,3 +31,6 @@ A full-bleed effect can be achieved by adding the class `full-bleed` to a an ele
 Nested columns are allowed, but must be wrapped by a `.row` element to avoid unwanted spacing issues.
 
 By default, [`collapse.js`](https://getbootstrap.com/docs/3.3/javascript/#collapse) and its corrresponding styles are included in the grid. You must also include the `app.js` file (found in the same directory as the `gridX.css` build), or manually include the source code from Bootstrap.
+
+## Font Defaults
+_Coming Soon!_
