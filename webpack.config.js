@@ -1,5 +1,5 @@
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
-let extractSCSS = new ExtractTextPlugin('./daniel-nordby-grid.css');
+let extractSCSS = new ExtractTextPlugin('./gridX.css');
 module.exports = {
     entry: "./src/js/app.js",
     output: {
