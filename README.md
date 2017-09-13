@@ -1,14 +1,13 @@
-# VPV CSS Normalizer
+# gridX
 
 ## Installation
-`git clone git@github.com:dnordby/css-library.git`
+`git clone git@github.com:dnordby/gridX.git`
 
-Pull out minified `css/vpv-normalizer.css` and add it to your assets directory. Include in your `<head>` tag:
-
-`<link rel="stylesheet" type="text/css" href="[your-path-to-file]/vpv-normalizer.css">`
+Include minified `css/gridX.css` and add it to your assets directory. Include in your `<head>` tag:
+`<link rel="stylesheet" type="text/css" href="[your-path-to-file]/gridX.css">`
 
 ## Grid
-The grid is set up using bootstrap naming conventions.
+gridX is a lightweight grid system, inspired by [Bootstrap](http://getbootstrap.com/) and follows similar naming conventions. gridX allows you to specify the number of columns your design will support, gutter width, and breakpoints.
 ```
 <div class="container-fluid">
 	<div class="row">
@@ -18,29 +17,22 @@ The grid is set up using bootstrap naming conventions.
 </div>
 ```
 
-Note that the `col-xl-*` class has been added.
+Unless otherwise modified in `_variables.scss`, defaults are currently as follows:
+* Small Breakpoint: 768px
+* Medium Breakpoint: 991px
+* Large Breakpoint: 1199px
+* Gutter Size: 24px
+* 12 column layout
 
-Breakpoints are currently as follows:
-* 325px - 767px (`col-xs-*`)
-* 768px - 991px (`col-sm-*`)
-* 992px - 1279px (`col-md-*`)
-* 1280px - 1599px (`col-lg-*`)
-* >= 1600px (`col-xl-*`)
+By default, the `.row` class has left/right padding of 12px. Any `.col-*-*` class has a margin of 12px. This combination creates a uniform gutter of 24px both vertically and horizontally. The gutter can be adjusted to accomodate your design scheme.
 
-Gutters are set to `1em` and `font-size: 24px;` for the document so that the padding on a column is `0.5em` or 12px. Two adjacent columns will have a gutter of `1em` or 24px. Note that gutters are created by padding on the entire outside of the column.
+A full-bleed effect can be achieved by adding the class `full-bleed` to a an element also containing the `row` class. This removes the extra row margin/padding, and removes margin on columns.
 
-There is no margin or padding adjustments on the `container-fluid` class. There is however a margin-top and margin-bottom of 0.5em, and a padding-left and padding-right of 0.5em. This ensures the gutter on the outside of the row matches the gutter between columns.
+Nested columns are allowed, but must be wrapped by a `.row` element to avoid unwanted spacing issues.
 
-A full-bleed effect can be achieved by adding the class `full-bleed` to a an element also containing the `row` class. This removes the extra row margin/padding, and removes padding on columns, and also adjusts width to be the full width of their column, rather than `width: calc([col-size]/12*100% - 1em)` which accounts for the gutter in a non-full-bleed scenario.
-
-Nested columns are allowed, and an optional `no-pad` class has been written in for nested columns which simply removes the padding on the column and fits the column width relative to its parent column container.
-
-## Font Normalizer
-
-*Not yet built out*
 
 ### To Modify:
-`git clone git@github.com:dnordby/css-library.git`
+`git clone git@github.com:dnordby/gridX.git`
 
 `git checkout -b [name_of_your_new_branch]`
 

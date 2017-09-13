@@ -16,6 +16,9 @@
     margin-left: -#{$half-gutter-size};
     margin-right: -#{$half-gutter-size};
     padding: 0;
+    > [class^="col-"] {
+      margin: 0 $half-gutter-size;
+    }
   }
 }
 
@@ -71,7 +74,7 @@
   align-items: stretch;
   display: flex;
   flex-flow: row wrap;
-  padding: $half-gutter-size;
+  padding: 0 $half-gutter-size;
   position: relative;
   &.full-bleed {
     padding: 0;
