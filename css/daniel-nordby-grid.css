@@ -738,11 +738,6 @@ tbody.collapse.in {
 .affix {
   position: fixed; }
 
-.tile {
-  height: 300px;
-  background-color: blue;
-  border: 2px solid orange; }
-
 html, body, h1, h2, h3, h4, h5, h6, p {
   box-sizing: border-box;
   font-family: 'Open Sans';
@@ -1284,4 +1279,4 @@ p {
   width: 100%; }
 
 .container {
-  max-width: 1400px; }
+  max-width: 1200px; }

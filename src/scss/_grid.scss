@@ -13,8 +13,8 @@
   margin: $half-gutter-size;
   position: relative;
   > .row {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -#{$half-gutter-size};
+    margin-right: -#{$half-gutter-size};
     padding: 0;
   }
 }
@@ -25,39 +25,39 @@
 
 @for $i from 1 through $columns {
   .col-xs-#{$i} {
-    width: calc((100% * #{$i} / #{$columns}) - $gutter-size);
+    width: calc((100% * #{$i} / #{$columns}) - #{$gutter-size});
   }
   .col-xs-offset-#{$i} {
-    margin-left: calc((100% * #{$i} / #{$columns}) + $half-gutter-size);
+    margin-left: calc((100% * #{$i} / #{$columns}) + #{$half-gutter-size});
   }
 }
 @media (min-width: $lg-break) {
   @for $i from 1 through $columns {
     .col-lg-#{$i} {
-      width: calc((100% * #{$i} / #{$columns}) - $gutter-size);
+      width: calc((100% * #{$i} / #{$columns}) - #{$gutter-size});
     }
     .col-lg-offset-#{$i} {
-      margin-left: calc((100% * #{$i} / #{$columns}) + $half-gutter-size);
+      margin-left: calc((100% * #{$i} / #{$columns}) + #{$half-gutter-size});
     }
   }
 }
 @media (max-width: $lg-break-down) and (min-width: $md-break) {
   @for $i from 1 through $columns {
     .col-md-#{$i} {
-      width: calc((100% * #{$i} / #{$columns}) - $gutter-size);
+      width: calc((100% * #{$i} / #{$columns}) - #{$gutter-size});
     }
     .col-md-offset-#{$i} {
-      margin-left: calc((100% * #{$i} / #{$columns}) + $half-gutter-size);
+      margin-left: calc((100% * #{$i} / #{$columns}) + #{$half-gutter-size});
     }
   }
 }
 @media (max-width: $md-break) and (min-width: $sm-break) {
   @for $i from 1 through $columns {
     .col-sm-#{$i} {
-      width: calc((100% * #{$i} / #{$columns}) - $gutter-size);
+      width: calc((100% * #{$i} / #{$columns}) - #{$gutter-size});
     }
     .col-sm-offset-#{$i} {
-      margin-left: calc((100% * #{$i} / #{$columns}) + $half-gutter-size);
+      margin-left: calc((100% * #{$i} / #{$columns}) + #{$half-gutter-size});
     }
   }
 }
@@ -128,5 +128,5 @@
 
 .container {
   @extend .container-fluid;
-  max-width: $large-break;
+  max-width: $lg-break;
 }

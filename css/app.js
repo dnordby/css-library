@@ -45,14 +45,19 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// REQUIRE ALL SCSS FROM APP.SCSS
-	__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./../scss/app.scss\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	__webpack_require__(1);
 
 	// REQUIRE COLLAPSE
 	__webpack_require__(2);
 
 
 /***/ },
-/* 1 */,
+/* 1 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
 /* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
