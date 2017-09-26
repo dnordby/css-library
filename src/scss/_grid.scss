@@ -11,11 +11,11 @@
   overflow: hidden;
   margin: $half-gutter-size;
   position: relative;
-  > .row {
+  .row {
     margin-left: -#{$half-gutter-size};
     margin-right: -#{$half-gutter-size};
     padding: 0;
-    > [class^="col-"] {
+    [class^="col-"] {
       margin: 0 $half-gutter-size;
     }
   }
